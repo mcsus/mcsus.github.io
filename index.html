@@ -249,6 +249,131 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/17/%E5%85%B3%E4%BA%8Ehexo-Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E7%95%AA%E6%8A%98%E8%85%BE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhendong Guo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gzd's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/17/%E5%85%B3%E4%BA%8Ehexo-Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E7%95%AA%E6%8A%98%E8%85%BE/" itemprop="url">关于hexo Next主题的一番折腾</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-17T22:51:37+08:00">
+                2020-05-17
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在按照教程安装完Next主题后，一直折腾两个问题：</p>
+<p>1.开启了Next的tags后，使用hexo new page “tags”，修改index.html后，点击tags仍然无法访问，显示error：can not get xxx</p>
+<p>解决办法：<br>将这个error转换为URL后，发现是因为站点设置的_config.yaml文件中的menu中的tags后有空格，把空格删去即可。</p>
+<p>2.sidebar侧边栏的posts点进去也是显示error。</p>
+<p>解决办法：<br>和上面一样，先转换为正常的URL连接，发现是sidebar.swig中的split函数无法正常工作。直接删掉这个判断，直接执行else中的语句即可。</p>
+<p>至此，算是折腾完了Next主题，能正常使用了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/17/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -536,7 +661,7 @@
             
               <div class="site-state-item site-state-posts">
                 <a href="/archives/">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -549,7 +674,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
