@@ -249,6 +249,135 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/18/%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E4%B8%A4%E5%8F%B0%E8%B7%AF%E7%94%B1%E5%99%A8%EF%BC%9F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhendong Guo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gzd's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2020/05/18/%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E4%B8%A4%E5%8F%B0%E8%B7%AF%E7%94%B1%E5%99%A8%EF%BC%9F/" itemprop="url">如何设置两台路由器？</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2020-05-18T10:17:33+08:00">
+                2020-05-18
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>因为路由器突然上不去网了，我的路由器在我的屋子里，连接的是第一台路由器，也就是主路由器。经过检查，主路由器是可以上网的。应该只是我这边的问题。</p>
+<p>1.重置路由器</p>
+<p>我的路由器是按住reset按钮5s重置</p>
+<p>2.设置wan口</p>
+<p>wan口是连接到主路由器的lan口上面的，所以首先需要把wan口设置为静态，设置一个合适的ip，比如说我的路由器，主路由器的ip地址为192.168.1.1(默认)，那么我就把wan口设置为192.168.1.33，随便设置最后一个数字，只要没被占用就可以。</p>
+<p>3.设置lan口</p>
+<p>lan口更改ip地址为192.168.2.1，网管也更改为192.168.2.1。dns服务器为8.8.8.8。DHCP不需要改，默认就好</p>
+<p>4.设置本机</p>
+<p>我使用的是win10系统，所以操作流程如下：右键那个WLAN图标-&gt;打开网络和Internet设置-&gt;网络共享中心-&gt;连接的WLAN，点击这段蓝字-&gt;属性-&gt;双击 internet协议4-&gt;更改ip地址为192.168.2.125，网关为192.168.2.1，dns服务器为8.8.8.8。点击确定即可</p>
+<p>至此，我的电脑能够正常上网了。</p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/17/%E5%85%B3%E4%BA%8Ehexo-Next%E4%B8%BB%E9%A2%98%E7%9A%84%E4%B8%80%E7%95%AA%E6%8A%98%E8%85%BE/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -661,7 +790,7 @@
             
               <div class="site-state-item site-state-posts">
                 <a href="/archives/">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -674,7 +803,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
