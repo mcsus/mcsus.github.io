@@ -522,7 +522,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2020/05/17/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/" itemprop="url">考研微积分</a></h1>
+                <a class="post-title-link" href="/2020/05/17/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/" itemprop="url">考研高数</a></h1>
         
 
         <div class="post-meta">
@@ -574,16 +574,20 @@
       
         
           
-            <p>本博文主要记载一些备考途中遇到的一些不会的微积分，以防忘记，本篇博文会持续更新下去。</p>
-<p>1.积分</p>
-<script type="math/tex; mode=display">
+            <p>本博文主要记载一些备考途中遇到的一些不会的，以防忘记，本篇博文会持续更新下去。</p>
+<h1 id="陌生积分"><a href="#陌生积分" class="headerlink" title="陌生积分"></a>陌生积分</h1><h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><script type="math/tex; mode=display">
 \int \sqrt{\frac{1-x}{1+x}} \ dx</script><p>解法：</p>
 <script type="math/tex; mode=display">\begin{array}{l}
 \int \sqrt{\frac{(1-x)}{(1+x)} /} d x \\
 =\int\sqrt{\frac{(1-x)^{2}}{(1+x)(1-x)} }   d x \\
 =\int\frac{1}{(1-x^{2})}     d x-    \int\frac{x}{(1-x^2)} d x   \\
 =\arcsin x+\sqrt{( 1-x^{2})} +C
-\end{array}</script>
+\end{array}</script><h1 id="多元函数的积分"><a href="#多元函数的积分" class="headerlink" title="多元函数的积分"></a>多元函数的积分</h1><h2 id="1-玫瑰曲线的面积"><a href="#1-玫瑰曲线的面积" class="headerlink" title="1.玫瑰曲线的面积"></a>1.玫瑰曲线的面积</h2><p>已知玫瑰曲线的方程为</p>
+<script type="math/tex; mode=display">r=acos(k\theta)</script><p>当k为偶数的时候：</p>
+<script type="math/tex; mode=display">\frac{1}{2} \int_{0}^{2 \pi}(a \cos (k \theta))^{2} d \theta=\frac{a^{2}}{2}\left(\pi+\frac{\sin (4 k \pi)}{4 k}\right)=\frac{\pi a^{2}}{2}</script><p>当k为奇数的时候：</p>
+<script type="math/tex; mode=display">\frac{1}{2} \int_{0}^{ \pi}(a \cos (k \theta))^{2} d \theta=\frac{a^{2}}{4}\left(\pi+\frac{\sin (4 k \pi)}{4 k}\right)=\frac{\pi a^{2}}{4}</script><p>为什么k为奇数的时候，面积只有一半呢？</p>
+<p>因为参数为k的玫瑰线，在区间上会形成2k个花瓣，其中k个极径为正，k个极径为负。<br>极径为负的花瓣也是存在的，一样能算面积，所以要包括在积分之内。<br>当k为奇数时，k个正极径花瓣和k个负极径花瓣两两重叠，所以面积少了一半。这个自己画一画就知道了。</p>
+
           
         
       
