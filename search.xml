@@ -54,19 +54,25 @@
       <title><![CDATA[考研高数]]></title>
       <url>/2020/05/17/%E8%80%83%E7%A0%94%E6%95%B0%E5%AD%A6/</url>
       <content type="html"><![CDATA[<p>本博文主要记载一些备考途中遇到的一些不会的，以防忘记，本篇博文会持续更新下去。</p>
-<h1 id="陌生积分"><a href="#陌生积分" class="headerlink" title="陌生积分"></a>陌生积分</h1><h2 id="1"><a href="#1" class="headerlink" title="1."></a>1.</h2><script type="math/tex; mode=display">
+<h1 id="积分知识"><a href="#积分知识" class="headerlink" title="积分知识"></a>积分知识</h1><h2 id="1-未知积分"><a href="#1-未知积分" class="headerlink" title="1.未知积分"></a>1.未知积分</h2><script type="math/tex; mode=display">
 \int \sqrt{\frac{1-x}{1+x}} \ dx</script><p>解法：</p>
 <script type="math/tex; mode=display">\begin{array}{l}
 \int \sqrt{\frac{(1-x)}{(1+x)} /} d x \\
 =\int\sqrt{\frac{(1-x)^{2}}{(1+x)(1-x)} }   d x \\
 =\int\frac{1}{(1-x^{2})}     d x-    \int\frac{x}{(1-x^2)} d x   \\
 =\arcsin x+\sqrt{( 1-x^{2})} +C
-\end{array}</script><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>二重积分当中</p>
+\end{array}</script><h2 id="2-积分对称"><a href="#2-积分对称" class="headerlink" title="2.积分对称"></a>2.积分对称</h2><p>二重积分当中</p>
 <ul>
 <li>如果被积函数f(x)关于x为奇函数，当积分区域关于y轴对称时，积分结果为0</li>
 <li>如果被积函数f(x)关于y为奇函数，当积分区域关于x轴对称时，积分结果为0</li>
 </ul>
 <p>如何判断二元函数关于某个自变量是否为奇函数？<br>将另一个自变量看做一个常数，利用奇函数性质判断即可。</p>
+<h2 id="3-积分轮换对称性"><a href="#3-积分轮换对称性" class="headerlink" title="3.积分轮换对称性"></a>3.积分轮换对称性</h2><p><strong>任何积分都具有轮转对称性！</strong></p>
+<p>对于二元积分而言，轮转对称性表示：被积函数x和y相互替换，重新画出积分区域（两积分区域关于y=x对称）后，积分结果仍然不变。本质是自变量的转换。</p>
+<ul>
+<li>如果两积分区域组成一个矩形，且该函数可以分离x，y。则有：该积分等于对x的积分和y的积分的乘积。</li>
+<li>如果积分的积分区域关于y=x对称，显然，经过转换的后的积分区域并不需要变化。</li>
+</ul>
 <h1 id="多元函数的积分"><a href="#多元函数的积分" class="headerlink" title="多元函数的积分"></a>多元函数的积分</h1><h2 id="1-玫瑰曲线的面积"><a href="#1-玫瑰曲线的面积" class="headerlink" title="1.玫瑰曲线的面积"></a>1.玫瑰曲线的面积</h2><p>已知玫瑰曲线的方程为</p>
 <script type="math/tex; mode=display">r=acos(k\theta)</script><p>当k为偶数的时候：</p>
 <script type="math/tex; mode=display">\frac{1}{2} \int_{0}^{2 \pi}(a \cos (k \theta))^{2} d \theta=\frac{a^{2}}{2}\left(\pi+\frac{\sin (4 k \pi)}{4 k}\right)=\frac{\pi a^{2}}{2}</script><p>当k为奇数的时候：</p>
