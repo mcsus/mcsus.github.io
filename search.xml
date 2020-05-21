@@ -42,9 +42,9 @@
         
         <tags>
             
-            <tag> Next </tag>
-            
             <tag> 折腾 </tag>
+            
+            <tag> Next </tag>
             
         </tags>
         
@@ -61,7 +61,13 @@
 =\int\sqrt{\frac{(1-x)^{2}}{(1+x)(1-x)} }   d x \\
 =\int\frac{1}{(1-x^{2})}     d x-    \int\frac{x}{(1-x^2)} d x   \\
 =\arcsin x+\sqrt{( 1-x^{2})} +C
-\end{array}</script><h1 id="多元函数的积分"><a href="#多元函数的积分" class="headerlink" title="多元函数的积分"></a>多元函数的积分</h1><h2 id="1-玫瑰曲线的面积"><a href="#1-玫瑰曲线的面积" class="headerlink" title="1.玫瑰曲线的面积"></a>1.玫瑰曲线的面积</h2><p>已知玫瑰曲线的方程为</p>
+\end{array}</script><h2 id="2"><a href="#2" class="headerlink" title="2."></a>2.</h2><p>二重积分当中</p>
+<ul>
+<li>如果被积函数f(x)关于x为奇函数，当积分区域关于y轴对称时，积分结果为0</li>
+<li>如果被积函数f(x)关于y为奇函数，当积分区域关于x轴对称时，积分结果为0</li>
+</ul>
+<p>如何判断二元函数关于某个自变量是否为奇函数？<br>将另一个自变量看做一个常数，利用奇函数性质判断即可。</p>
+<h1 id="多元函数的积分"><a href="#多元函数的积分" class="headerlink" title="多元函数的积分"></a>多元函数的积分</h1><h2 id="1-玫瑰曲线的面积"><a href="#1-玫瑰曲线的面积" class="headerlink" title="1.玫瑰曲线的面积"></a>1.玫瑰曲线的面积</h2><p>已知玫瑰曲线的方程为</p>
 <script type="math/tex; mode=display">r=acos(k\theta)</script><p>当k为偶数的时候：</p>
 <script type="math/tex; mode=display">\frac{1}{2} \int_{0}^{2 \pi}(a \cos (k \theta))^{2} d \theta=\frac{a^{2}}{2}\left(\pi+\frac{\sin (4 k \pi)}{4 k}\right)=\frac{\pi a^{2}}{2}</script><p>当k为奇数的时候：</p>
 <script type="math/tex; mode=display">\frac{1}{2} \int_{0}^{ \pi}(a \cos (k \theta))^{2} d \theta=\frac{a^{2}}{4}\left(\pi+\frac{\sin (4 k \pi)}{4 k}\right)=\frac{\pi a^{2}}{4}</script><p>为什么k为奇数的时候，面积只有一半呢？</p>
