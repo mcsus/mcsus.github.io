@@ -249,6 +249,126 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2021/02/12/%E8%AF%91%E6%96%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Zhendong Guo">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Gzd's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2021/02/12/%E8%AF%91%E6%96%87/" itemprop="url">译文</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2021-02-12T22:02:44+08:00">
+                2021-02-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h1 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h1><p>计算负载在不同处理元素之间的分配是并行计算中的一个重要问题。事实上，由于负载较少的进程等待负载较多的进程，导致同步空闲时间过长，不平衡的负载分配会强烈影响并行系统的性能。在本文中，我们重点讨论空间相关应用的并行执行中的负载平衡问题，其中域空间被分割成区域，分配给不同的处理元素。特别是，在不失通用性的前提下，我们考虑了著名的空间相关的蜂窝自动机计算范式来评估所提出的动态负载平衡方法。本文的主要贡献是推导了简单的闭式表达式，这些表达式允许以动态的方式计算最佳的工作负载分配，目标是保证在并行执行过程中完全平衡的工作负载分配。基于这些表达式，提出了一种细胞自动机平衡执行的算法，并利用MPI技术实现了该算法。最后，实验部分实际展示了所提出的动态负载均衡方法的行为，并证明了它与非均衡版本相比在性能上的改进，这一点可以从执行时间的明显减少中看出。<img src="译文.assets/image-20210212213537403.png" alt="image-20210212213537403"></p>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://yoursite.com/2020/05/18/%E5%A6%82%E4%BD%95%E8%AE%BE%E7%BD%AE%E4%B8%A4%E5%8F%B0%E8%B7%AF%E7%94%B1%E5%99%A8%EF%BC%9F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -592,13 +712,21 @@
 <p>对于二元积分而言，轮转对称性表示：被积函数x和y相互替换，重新画出积分区域（两积分区域关于y=x对称）后，积分结果仍然不变。本质是自变量的转换。</p>
 <ul>
 <li>如果两积分区域组成一个矩形，且该函数可以分离x，y。则有：该积分等于对x的积分和y的积分的乘积。</li>
-<li>如果积分的积分区域关于y=x对称，显然，经过转换的后的积分区域并不需要变化。</li>
+<li>如果积分的积分区域正好关于y=x对称，显然，经过转换后积分，积分区域并不需要改变。</li>
 </ul>
 <h1 id="多元函数的积分"><a href="#多元函数的积分" class="headerlink" title="多元函数的积分"></a>多元函数的积分</h1><h2 id="1-玫瑰曲线的面积"><a href="#1-玫瑰曲线的面积" class="headerlink" title="1.玫瑰曲线的面积"></a>1.玫瑰曲线的面积</h2><p>已知玫瑰曲线的方程为</p>
 <script type="math/tex; mode=display">r=acos(k\theta)</script><p>当k为偶数的时候：</p>
 <script type="math/tex; mode=display">\frac{1}{2} \int_{0}^{2 \pi}(a \cos (k \theta))^{2} d \theta=\frac{a^{2}}{2}\left(\pi+\frac{\sin (4 k \pi)}{4 k}\right)=\frac{\pi a^{2}}{2}</script><p>当k为奇数的时候：</p>
 <script type="math/tex; mode=display">\frac{1}{2} \int_{0}^{ \pi}(a \cos (k \theta))^{2} d \theta=\frac{a^{2}}{4}\left(\pi+\frac{\sin (4 k \pi)}{4 k}\right)=\frac{\pi a^{2}}{4}</script><p>为什么k为奇数的时候，面积只有一半呢？</p>
 <p>因为参数为k的玫瑰线，在区间上会形成2k个花瓣，其中k个极径为正，k个极径为负。<br>极径为负的花瓣也是存在的，一样能算面积，所以要包括在积分之内。<br>当k为奇数时，k个正极径花瓣和k个负极径花瓣两两重叠，所以面积少了一半。这个自己画一画就知道了。</p>
+<h2 id="2-三重积分"><a href="#2-三重积分" class="headerlink" title="2.三重积分"></a>2.三重积分</h2><p>三重积分转换为求面坐标的时候需要注意一下几点：</p>
+<ul>
+<li>按照课本上的  $\theta$ 和 $\varphi$,其中$\theta$为z轴到z轴负方向所能转向的最大角度。$\varphi$为几何体在xoy平面上的投影所涵盖的角度。</li>
+</ul>
+<h2 id="3-极坐标转换"><a href="#3-极坐标转换" class="headerlink" title="3.极坐标转换"></a>3.极坐标转换</h2><p>极坐标转换后的积分角度不是正常的0-2$\pi$，目前已知一下情况：</p>
+<ul>
+<li>被积分函数存在根号，通过转换后可以消除根号。</li>
+</ul>
 
           
         
@@ -806,7 +934,7 @@
             
               <div class="site-state-item site-state-posts">
                 <a href="/archives/">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -856,7 +984,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2020</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
